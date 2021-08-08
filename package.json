@@ -1,0 +1,22 @@
+{
+  "name": "chainwhiz_landing",
+  "version": "1.0.0",
+  "description": "Landing Page of ChainWhiZ",
+  "main": "jsFunctions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChainWhiZ/chainwhiz_landing.git"
+  },
+  "author": "Team ChainWhiZ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChainWhiZ/chainwhiz_landing/issues"
+  },
+  "homepage": "https://github.com/ChainWhiZ/chainwhiz_landing#readme",
+  "dependencies": {
+    "firebase": "^8.7.0"
+  }
+}

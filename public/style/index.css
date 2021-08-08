@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+}
+
+.row {
+    display: flex;
+    height: 100%;
+  }
+  
+   .left-side {
+     width: 53%;
+  } 
+
+  img{
+    margin-top: 34px;
+    margin-left: 37px;
+  }
+  .right-side{
+      flex:40%;
+      height: 100vh;
+      /* background: url() 0% 0% no-repeat padding-box; */
+      background: url('img/Mask Group 1.png') no-repeat;
+  }
+  .Heading{
+    font: normal normal bold 47px/59px Poppins;
+    color: #1D1D1D;
+    letter-spacing: 0.58px;
+    margin-top: 140px;
+    margin-left: 55px;
+  }
+
+  #red{
+    color: #F63E3E;
+  }
+
+  #blue{
+    color: #3A8FFF;
+  }
+  .Para{
+    text-align: left;
+    font: normal normal 16px/26px Poppins;
+    letter-spacing: 0.46px;
+    color: #434343C7;
+    margin-top: 36px;
+    margin-left: 55px;
+  }
+
+  #joinButton{
+    margin-left: 55px;
+    margin-top: 37px;
+    color: white;
+    font: normal normal 500 16px/26px Poppins;
+    width: 144px;
+    height: 38px;
+    background: #313131 0% 0% no-repeat padding-box;
+    border: none;
+    border-radius: 7px;
+    opacity: 1;
+    cursor: pointer; 
+  }
+
+  #emailModal{
+    background: white;
+    /* align-self: center;
+    justify-self: center; */
+    width: 560px;
+    height: 141px;
+    border-radius: 12px;
+    border: none;
+    /* position: absolute; */
+    left: 29%;
+    top: 38%;
+    /* display: inline-block; */
+  }
+
+  #emailModal label{
+    font: normal normal 500 13px/22px Poppins;
+    letter-spacing: 0.01px;
+    color: #0C0C0C;
+    display: block;
+    margin: 32px 0px 0px 33px;
+  }
+
+  input{
+    width: 361px;
+    height: 25px;
+    border-radius: 5px;
+    margin: 6px 0px 0px 32px;
+  }
+
+  #submitEmail{
+    width: 103px;
+    height: 32px;
+    background: #313131 0% 0% no-repeat padding-box;
+    border-radius: 7px;
+    opacity: 1;
+    color: white;
+    font: normal normal 600 13px/21px Poppins;
+    letter-spacing: 0.18px;
+    margin: 0px 0px 0px 20px;
+    border: none;
+    cursor: pointer; 
+  }
+
+  #emailModal p{
+    font: normal normal normal 13px/21px Poppins;
+    letter-spacing: 0.01px;
+    color: #373737;
+    opacity: 0.69;
+    margin: 11px 0px 0px 32px;
+  }
+
+  dialog::backdrop {
+    background: #1A1A1A 0% 0% no-repeat padding-box;
+    opacity: 0.75;
+  }

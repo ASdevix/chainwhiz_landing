@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ChainWhiZ</title>
+    <meta
+      name="viewport"
+      content="width=device-width,height=device-height, initial-scale=1"
+    />
+    <link rel="stylesheet" href="./style/index.css" />
+  </head>
+
+  <body>
+    <div class="row">
+      <div class="left-side">
+        <img src="./style/img/CWZalternativeblack.png" alt="logo" />
+        <p class="Heading">Build <span id="red">better dapps</span><br>with the power of<br><span id="blue">community voting.</span></p>
+        <p class="Para">
+          Chainwhiz is an open source dapp development<br>marketplace which helps
+          you post, solve and<br>vote on dapp bounties. Coming soon.
+        </p>
+        <button id="joinButton">Join Waitlist</button>
+      </div>
+      <div class="right-side"></div>
+    </div>
+    <dialog id="emailModal">
+      <form method="dialog">
+        <label>EMAIL ADDRESS</label>
+        <input type="email" />
+        <button id="submitEmail">Notify Me</button>
+      </form>
+      <p>We never steal, track or sell your data.</p>
+    </dialog>
+
+    <script type="text/javascript" src="./jsFunctions.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase.js"></script>
+
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyBrjUV03R3Do0WEac4YFkTzT8bnSks6RUQ",
+        authDomain: "chainwhiz-512a9.firebaseapp.com",
+        projectId: "chainwhiz-512a9",
+        storageBucket: "chainwhiz-512a9.appspot.com",
+        messagingSenderId: "919408783257",
+        appId: "1:919408783257:web:623249f5e2a42b9616ad08",
+        measurementId: "G-X3NRCKKF5Z",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      var messagesRef = firebase.database().ref("Collected EmailIds");
+
+      document
+        .getElementById("emailModal")
+        .addEventListener("close", function onClose() {
+          var email = document.querySelector("input").value;
+          var newMessageRef = messagesRef.push();
+          newMessageRef.set({
+            email: email,
+          });
+        });
+    </script>
+  </body>
+</html>
